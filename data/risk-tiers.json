@@ -1,9 +1,9 @@
 {
- "generated": "2026-10-18",
+ "generated": "2026-10-23",
  "counts": {
   "consequential": 246,
   "high-stakes": 162,
-  "informational": 899
+  "informational": 918
  },
  "tiers": {
   "360-feedback-template": {
@@ -86,7 +86,19 @@
    "tier": "informational",
    "via": "default"
   },
+  "agent-kill-switch-plan": {
+   "tier": "informational",
+   "via": "default"
+  },
+  "agent-negotiation-brief": {
+   "tier": "informational",
+   "via": "default"
+  },
   "agent-observability-spec": {
+   "tier": "informational",
+   "via": "default"
+  },
+  "agent-project-file": {
    "tier": "informational",
    "via": "default"
   },
@@ -99,6 +111,10 @@
    "via": "default"
   },
   "agent-spec": {
+   "tier": "informational",
+   "via": "default"
+  },
+  "agent-spending-mandate": {
    "tier": "informational",
    "via": "default"
   },
@@ -231,6 +247,10 @@
    "via": "bundle:pm-cv"
   },
   "apprentice-first-week": {
+   "tier": "informational",
+   "via": "default"
+  },
+  "approval-policy-designer": {
    "tier": "informational",
    "via": "default"
   },
@@ -571,6 +591,10 @@
    "via": "default"
   },
   "cash-flow-forecast": {
+   "tier": "informational",
+   "via": "default"
+  },
+  "cash-watch": {
    "tier": "informational",
    "via": "default"
   },
@@ -1054,6 +1078,10 @@
    "tier": "informational",
    "via": "default"
   },
+  "computer-use-runbook": {
+   "tier": "informational",
+   "via": "default"
+  },
   "condolence-message-helper": {
    "tier": "consequential",
    "via": "bundle:pm-family"
@@ -1189,6 +1217,10 @@
   "credit-memo": {
    "tier": "high-stakes",
    "via": "bundle:pm-banking"
+  },
+  "crm-hygiene-sweep": {
+   "tier": "informational",
+   "via": "default"
   },
   "crop-insurance-claim": {
    "tier": "high-stakes",
@@ -1727,6 +1759,10 @@
    "via": "bundle:pm-hr"
   },
   "empty-state-writer": {
+   "tier": "informational",
+   "via": "default"
+  },
+  "end-of-day-report": {
    "tier": "informational",
    "via": "default"
   },
@@ -2570,6 +2606,10 @@
    "tier": "high-stakes",
    "via": "bundle:pm-decoders"
   },
+  "interrupt-rules": {
+   "tier": "informational",
+   "via": "default"
+  },
   "interview-me": {
    "tier": "informational",
    "via": "default"
@@ -3114,6 +3154,10 @@
    "tier": "informational",
    "via": "default"
   },
+  "morning-brief-designer": {
+   "tier": "informational",
+   "via": "default"
+  },
   "morning-intelligence": {
    "tier": "informational",
    "via": "default"
@@ -3362,6 +3406,10 @@
    "tier": "high-stakes",
    "via": "bundle:pm-decoders"
   },
+  "payroll-eve-check": {
+   "tier": "informational",
+   "via": "default"
+  },
   "paywall-optimization": {
    "tier": "informational",
    "via": "default"
@@ -3543,6 +3591,10 @@
    "via": "default"
   },
   "premortem-assassin": {
+   "tier": "informational",
+   "via": "default"
+  },
+  "prepare-for-duet": {
    "tier": "informational",
    "via": "default"
   },
@@ -4238,6 +4290,10 @@
    "tier": "consequential",
    "via": "bundle:pm-career"
   },
+  "send-approval-check": {
+   "tier": "informational",
+   "via": "default"
+  },
   "sensory-audit": {
    "tier": "consequential",
    "via": "bundle:pm-neurodivergent"
@@ -4265,6 +4321,10 @@
   "severance-agreement-decoder": {
    "tier": "high-stakes",
    "via": "skill"
+  },
+  "shared-agent-charter": {
+   "tier": "informational",
+   "via": "default"
   },
   "shared-drive-cleanup": {
    "tier": "informational",
@@ -4301,6 +4361,10 @@
   "side-business-setup": {
    "tier": "consequential",
    "via": "bundle:pm-sidehustle"
+  },
+  "signature-pipeline-watch": {
+   "tier": "informational",
+   "via": "default"
   },
   "singapore-cpf-explainer": {
    "tier": "informational",
@@ -4490,6 +4554,10 @@
    "tier": "informational",
    "via": "default"
   },
+  "standing-orders": {
+   "tier": "informational",
+   "via": "default"
+  },
   "stargazing-tonight": {
    "tier": "informational",
    "via": "default"
@@ -4529,6 +4597,10 @@
   "stop-the-bleed-triage": {
    "tier": "high-stakes",
    "via": "bundle:pm-hardship"
+  },
+  "store-watch": {
+   "tier": "informational",
+   "via": "default"
   },
   "story-pitch": {
    "tier": "informational",
@@ -5127,6 +5199,10 @@
    "via": "bundle:pm-family"
   },
   "weekly-review-ritual": {
+   "tier": "informational",
+   "via": "default"
+  },
+  "weekly-rollup": {
    "tier": "informational",
    "via": "default"
   },

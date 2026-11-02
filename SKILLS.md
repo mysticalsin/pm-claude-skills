@@ -1,4 +1,4 @@
-# 🗂️ All 1295 Skills — full catalog
+# 🗂️ All 1314 Skills — full catalog
 
 > The complete per-skill breakdown, grouped by domain. For an interactive, searchable version see the [**live catalog**](https://mohitagw15856.github.io/pm-claude-skills/catalog.html); to run any skill in your browser, use the [**Playground**](https://mohitagw15856.github.io/pm-claude-skills/). Back to the [README](README.md).
 >
@@ -724,7 +724,7 @@
 | **Resume** (`resume`) | Write a sharp, achievement-led resume/CV that passes ATS and earns the interview. | ✅ 4/5 |
 | **Trip Planner** (`trip-planner`) | Turn a destination, some dates, and your vibe into a realistic day-by-day trip itinerary — paced for real humans, with a packing list and a rough… | — |
 
-## 🌍 Industries & Public Sector (832 skills)
+## 🌍 Industries & Public Sector (851 skills)
 
 ### `other` — 22 skills · 12 eval-scored
 
@@ -788,12 +788,16 @@
 | **Functional Assessment Prep** (`functional-assessment-prep`) | Prepare for a disability or illness benefit assessment (a functional or work capability assessment, a medical review, a disability evaluation… | ✅ 4.8/5 |
 | **Venue Access Check** (`venue-access-check`) | Check whether a specific venue — a restaurant, office, event space, Airbnb, clinic — will actually work for your access needs, before you commit… | ✅ 4.5/5 |
 
-### `pm-agentnative` — 5 skills · 5 eval-scored
+### `pm-agentnative` — 9 skills · 5 eval-scored
 
 | Skill | What it does | Eval |
 |---|---|---|
 | **Agent Era Pricing** (`agent-era-pricing`) | Redesign seat-based pricing for the agent era — when one human runs ten agents, per-seat models collapse. | ✅ 4.8/5 |
+| **Agent Negotiation Brief** (`agent-negotiation-brief`) | Brief an AI agent that will negotiate for you with another party's agent or a person (a refund, a price, a meeting time, a contract term): your… | — |
+| **Agent Project File** (`agent-project-file`) | Set up the project file an AI agent keeps for work that runs over days or weeks: the goal, the definition of done, milestones, the current state… | — |
 | **Agent Readiness Audit** (`agent-readiness-audit`) | Audit whether AI agents can actually use your product — docs, APIs, onboarding, errors, and discoverability, evaluated from a non-human user's… | ✅ 4.5/5 |
+| **Agent Spending Mandate** (`agent-spending-mandate`) | Write a spending mandate that lets an AI agent buy things for you within strict limits: what it may buy, from whom, up to how much per purchase… | — |
+| **Computer-Use Runbook** (`computer-use-runbook`) | Write the step-by-step runbook a computer-use or browser agent follows to finish a real online task, such as cancelling a subscription or changing… | — |
 | **Human-in-the-Loop Design** (`human-in-the-loop-design`) | Design the human approval surface for an agent system — which actions gate, how approvals batch without becoming rubber stamps, and what the audit… | ✅ 4.8/5 |
 | **MCP Server Spec** (`mcp-server-spec`) | Design an MCP server for a product — the tool surface, auth model, and safety boundaries that make it genuinely usable by AI agents. | ✅ 4.8/5 |
 | **Voice Agent Design** (`voice-agent-design`) | Design a voice AI agent for phone or in-app conversations — call flows, interruption handling, escalation to humans, and the metrics that catch a… | ✅ 4/5 |
@@ -1312,6 +1316,26 @@
 | **Excel Model** (`excel-model`) | Build a real, formula-driven Excel (.xlsx) model — not a static table. | — |
 | **Slide Deck** (`slide-deck`) | Build a real, editable PowerPoint (.pptx) deck from an outline or brief. | — |
 | **Word Document** (`word-document`) | Build a real, formatted Word (.docx) document — headings, styles, tables, TOC-ready. | — |
+
+### `pm-duet` — 15 skills
+
+| Skill | What it does | Eval |
+|---|---|---|
+| **Agent Kill Switch Plan** (`agent-kill-switch-plan`) | Prepare, before you need it, the runbook for stopping a proactive agent that is misbehaving: how to pause it in seconds, which connections to… | — |
+| **Approval Policy Designer** (`approval-policy-designer`) | Design the approval policy for a proactive agent across every connected app: for each kind of action, whether it may act alone, must ask first, or… | — |
+| **Cash Watch** (`cash-watch`) | Set up a proactive agent to watch a small business's cash every day across Stripe, QuickBooks or Xero and the bank feed: today's cash position… | — |
+| **CRM Hygiene Sweep** (`crm-hygiene-sweep`) | Have a proactive agent sweep a CRM (HubSpot, Salesforce, Pipedrive) on a schedule for the things that quietly rot a pipeline: deals with no next… | — |
+| **End Of Day Report** (`end-of-day-report`) | Produce an end-of-day report an unattended agent can send honestly: what shipped (verified), what is drafted or waiting, what is blocked and on… | — |
+| **Interrupt Rules** (`interrupt-rules`) | Write the between-brief alert rules for a proactive agent: exactly what may interrupt you, what waits for the next brief, and the wording of an… | — |
+| **Morning Brief Designer** (`morning-brief-designer`) | Design a proactive agent's morning brief: which connected sources it reads, what earns a line, the fixed section order and length cap, and the… | — |
+| **Payroll Eve Check** (`payroll-eve-check`) | Have a proactive agent check payroll the day before it runs in Gusto, Deel, Xero Payroll or similar: unusual pay changes, new starters and… | — |
+| **Prepare For Duet** (`prepare-for-duet`) | A readiness audit for proactive agents, useful while you are still on the waitlist: what in your memory, recurring prompts, connectors and inbox… | — |
+| **Send Approval Check** (`send-approval-check`) | The gate before an agent sends anything on your behalf: one card showing recipient, sending account, subject, attachments, and the single sentence… | — |
+| **Shared Agent Charter** (`shared-agent-charter`) | Write the charter for an AI agent a whole team shares (an OpenAI Dot in Slack or Teams, a shared Claude agent, a channel bot): who may give it… | — |
+| **Signature Pipeline Watch** (`signature-pipeline-watch`) | Have a proactive agent watch documents waiting for signature in DocuSign, Adobe Sign or PandaDoc: which are stuck, for how long, with whom, which… | — |
+| **Standing Orders** (`standing-orders`) | Write the operating manual a proactive agent follows between your messages: who is a VIP, what it may always do, what it must never do, the tone… | — |
+| **Store Watch** (`store-watch`) | Have a proactive agent watch an online shop (Shopify, WooCommerce, Etsy) for what needs the owner: best-sellers about to run out, a spike in… | — |
+| **Weekly Rollup** (`weekly-rollup`) | Roll a week of daily reports and agent activity into one honest weekly summary: trajectory against goals, what shipped with proof, the recurring… | — |
 
 ### `pm-ecommerce` — 7 skills · 6 eval-scored
 
@@ -2090,4 +2114,4 @@
 
 ---
 
-_1295 skills across 153 bundles · 399 eval-scored (31%). See the [leaderboard](https://mohitagw15856.github.io/pm-claude-skills/leaderboard.html)._
+_1314 skills across 154 bundles · 399 eval-scored (30%). See the [leaderboard](https://mohitagw15856.github.io/pm-claude-skills/leaderboard.html)._

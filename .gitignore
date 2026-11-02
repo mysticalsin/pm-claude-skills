@@ -16,6 +16,10 @@ web/catalog.html
 web/leaderboard.html
 web/community.html
 web/coverage.html
+# Small-model badges (scripts/build-small-model-badges.mjs, built at deploy)
+web/badge/small-model/
+# Rule-change watcher state for local runs (the workflow keeps it in its issue)
+data/rule-sources-state.json
 web/skill/
 web/sitemap.xml
 web/robots.txt
@@ -84,6 +88,7 @@ web/registry/
 web/partners.json
 web/skill-cup.json
 web/cup-prizes.json
+web/skill-hack.json
 web/overlays.json
 web/box.json
 web/i18n-desc/
@@ -118,3 +123,17 @@ skillbench/jobs-exam/.key.json
 
 # Eval outputs saved with --save-outputs (for diagnosis; not published)
 evals/outputs/
+
+# Fake-apps sandbox action log (integrations/fake-apps-mcp)
+integrations/fake-apps-mcp/sandbox-actions.log
+
+# One ZIP per skill for claude.ai upload (scripts/build-skill-zips.mjs, built at deploy)
+web/skill-zip/
+
+# /.well-known/agent-skills.json (scripts/build-well-known.mjs, built at deploy)
+web/.well-known/
+
+# Local secrets (see .env.example)
+.env
+.env.*
+!.env.example

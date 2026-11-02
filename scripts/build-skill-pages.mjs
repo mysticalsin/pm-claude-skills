@@ -340,6 +340,7 @@ ${existsSync(join(root, 'skills-i18n', 'zh', s.name, 'SKILL.md')) ? `<link rel="
   <div class="cta">
     <a class="btn btn-primary" href="${playUrl}">▶ Run it free — no key needed</a>
     <a class="btn btn-ghost" href="${BASE}/grade.html?skill=${s.name}">📝 Grade your existing draft</a>
+    <a class="btn btn-ghost" href="${BASE}/skill-zip/${s.name}.zip" download title="Upload in claude.ai: Settings, Skills, Upload skill. It then works in Claude and in Claude Duet.">⬇ Add to Claude (works in Duet)</a>
     <a class="btn btn-ghost" href="${BASE}/use.html?skill=${s.name}">📱 Use as an app</a>
     <a class="btn btn-ghost" href="${REPO}/blob/main/skills/${s.name}/SKILL.md">View SKILL.md ↗</a>
     <a class="btn btn-ghost" href="../changes.html?skill=${s.name}">What changed</a>
@@ -386,7 +387,7 @@ for (const s of skills) writeFileSync(join(outDir, `${s.name}.html`), page(s));
 const today = new Date().toISOString().slice(0, 10);
 const urls = [
   `${BASE}/`, `${BASE}/find.html`, `${BASE}/catalog.html`, `${BASE}/examples.html`, `${BASE}/leaderboard.html`,
-  `${BASE}/coverage.html`, `${BASE}/canvas.html`, `${BASE}/firm.html`, `${BASE}/boardroom.html`, `${BASE}/defend.html`, `${BASE}/verify.html`, `${BASE}/gym.html`, `${BASE}/gauntlet.html`, `${BASE}/xray.html`, `${BASE}/grade.html`, `${BASE}/benchmark.html`, `${BASE}/hiring.html`, `${BASE}/wrapped.html`, `${BASE}/academy.html`, `${BASE}/campaign.html`, `${BASE}/reckoning.html`, `${BASE}/handbook.html`, `${BASE}/charter.html`, `${BASE}/tower.html`, `${BASE}/stage.html`, `${BASE}/galaxy3d.html`, `${BASE}/city.html`, `${BASE}/trophy.html`, `${BASE}/status.html`, `${BASE}/season.html`, `${BASE}/atlas.html`, `${BASE}/morningshow.html`, `${BASE}/institute.html`,
+  `${BASE}/coverage.html`, `${BASE}/canvas.html`, `${BASE}/firm.html`, `${BASE}/boardroom.html`, `${BASE}/verify.html`, `${BASE}/gym.html`, `${BASE}/gauntlet.html`, `${BASE}/xray.html`, `${BASE}/grade.html`, `${BASE}/benchmark.html`, `${BASE}/hiring.html`, `${BASE}/academy.html`, `${BASE}/campaign.html`, `${BASE}/reckoning.html`, `${BASE}/handbook.html`, `${BASE}/status.html`,
   ...skills.map((s) => `${BASE}/skill/${s.name}.html`),
   `${BASE}/museum.html`, `${BASE}/growth.html`,
   ...(existsSync(join(root, 'web', 'compare'))

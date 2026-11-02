@@ -1,7 +1,7 @@
 {
   "generated_by": "scripts/build-catalogue.mjs",
-  "bundles": 152,
-  "skills": 1273,
+  "bundles": 153,
+  "skills": 1292,
   "items": [
     {
       "bundle": "pm-2027",
@@ -200,8 +200,24 @@
           "description": "Redesign seat-based pricing for the agent era — when one human runs ten agents, per-seat models collapse."
         },
         {
+          "name": "agent-negotiation-brief",
+          "description": "Brief an AI agent that will negotiate for you with another party's agent or a person (a refund, a price, a meeting time, a contract term): your goal, your opening, your limits, your walk-away point, what it must never reveal, and when it must come back to you."
+        },
+        {
+          "name": "agent-project-file",
+          "description": "Set up the project file an AI agent keeps for work that runs over days or weeks: the goal, the definition of done, milestones, the current state, decisions made, open questions, and the exact point to resume from after an interruption."
+        },
+        {
           "name": "agent-readiness-audit",
           "description": "Audit whether AI agents can actually use your product — docs, APIs, onboarding, errors, and discoverability, evaluated from a non-human user's perspective."
+        },
+        {
+          "name": "agent-spending-mandate",
+          "description": "Write a spending mandate that lets an AI agent buy things for you within strict limits: what it may buy, from whom, up to how much per purchase and in total, until when, and what needs your yes."
+        },
+        {
+          "name": "computer-use-runbook",
+          "description": "Write the step-by-step runbook a computer-use or browser agent follows to finish a real online task, such as cancelling a subscription or changing an energy supplier: what to look for on screen, one action per step, how to know it worked, and where to stop for a human."
         },
         {
           "name": "human-in-the-loop-design",
@@ -509,11 +525,13 @@
         },
         {
           "name": "competitive-intelligence-monitor",
-          "description": "Monitor competitor signals and surface strategic implications for your roadmap."
+          "description": "Monitor competitor signals and surface strategic implications for your roadmap.",
+          "duet_ready": "designed-for-duet"
         },
         {
           "name": "delta-briefing",
-          "description": "Make a recurring brief report what changed since the last edition instead of restating everything."
+          "description": "Make a recurring brief report what changed since the last edition instead of restating everything.",
+          "duet_ready": "designed-for-duet"
         },
         {
           "name": "morning-intelligence",
@@ -1920,11 +1938,13 @@
         },
         {
           "name": "followup-sweep",
-          "description": "Sweep the user's REAL mail and calendar for dropped balls — threads awaiting their reply, promises they made, and replies they're owed — then draft the nudges."
+          "description": "Sweep the user's REAL mail and calendar for dropped balls — threads awaiting their reply, promises they made, and replies they're owed — then draft the nudges.",
+          "duet_ready": "designed-for-duet"
         },
         {
           "name": "inbox-triage-live",
-          "description": "Triage the user's REAL inbox through the Gmail connector — not a framework they run by hand."
+          "description": "Triage the user's REAL inbox through the Gmail connector — not a framework they run by hand.",
+          "duet_ready": "designed-for-duet"
         },
         {
           "name": "issue-triage-live",
@@ -2830,6 +2850,92 @@
       ]
     },
     {
+      "bundle": "pm-duet",
+      "description": "Proactive-agent skills for Claude Duet and its kin: design the morning brief, set interrupt rules, end-of-day and weekly reports, a send-approval gate, and a readiness audit. Every skill carries the duet block, the shared status vocabulary and the treat-source-material-as-data rule, so briefs stay short, cited and honest when no one is watching.",
+      "category": "productivity",
+      "install": {
+        "claude_code": "/plugin install pm-duet@pm-claude-skills",
+        "any_tool": "npx pm-claude-skills add --bundle pm-duet"
+      },
+      "skills": [
+        {
+          "name": "agent-kill-switch-plan",
+          "description": "Prepare, before you need it, the runbook for stopping a proactive agent that is misbehaving: how to pause it in seconds, which connections to revoke in what order, how to check what it did, who to tell, and how to restart safely.",
+          "duet_ready": "designed-for-duet"
+        },
+        {
+          "name": "approval-policy-designer",
+          "description": "Design the approval policy for a proactive agent across every connected app: for each kind of action, whether it may act alone, must ask first, or must never do it, with money limits, recipient rules and an audit line.",
+          "duet_ready": "designed-for-duet"
+        },
+        {
+          "name": "cash-watch",
+          "description": "Set up a proactive agent to watch a small business's cash every day across Stripe, QuickBooks or Xero and the bank feed: today's cash position, money due in and out this week, failed payments, new disputes and the runway line, with clear rules for what interrupts you and what waits for the morning brief.",
+          "duet_ready": "designed-for-duet"
+        },
+        {
+          "name": "crm-hygiene-sweep",
+          "description": "Have a proactive agent sweep a CRM (HubSpot, Salesforce, Pipedrive) on a schedule for the things that quietly rot a pipeline: deals with no next step, close dates in the past, deals untouched for weeks, contacts with no owner, and duplicate records, reported per owner with suggested fixes a human approves.",
+          "duet_ready": "designed-for-duet"
+        },
+        {
+          "name": "end-of-day-report",
+          "description": "Produce an end-of-day report an unattended agent can send honestly: what shipped (verified), what is drafted or waiting, what is blocked and on whom, and tomorrow's first action.",
+          "duet_ready": "designed-for-duet"
+        },
+        {
+          "name": "interrupt-rules",
+          "description": "Write the between-brief alert rules for a proactive agent: exactly what may interrupt you, what waits for the next brief, and the wording of an interruption.",
+          "duet_ready": "designed-for-duet"
+        },
+        {
+          "name": "morning-brief-designer",
+          "description": "Design a proactive agent's morning brief: which connected sources it reads, what earns a line, the fixed section order and length cap, and the wording rules that keep it honest.",
+          "duet_ready": "designed-for-duet"
+        },
+        {
+          "name": "payroll-eve-check",
+          "description": "Have a proactive agent check payroll the day before it runs in Gusto, Deel, Xero Payroll or similar: unusual pay changes, new starters and leavers, missing approvals, enough cash in the funding account, and anything that would make a payslip wrong, reported as a short pre-run list for a human to approve.",
+          "duet_ready": "designed-for-duet"
+        },
+        {
+          "name": "prepare-for-duet",
+          "description": "A readiness audit for proactive agents, useful while you are still on the waitlist: what in your memory, recurring prompts, connectors and inbox habits will help or hurt an agent that acts between your messages.",
+          "duet_ready": "designed-for-duet"
+        },
+        {
+          "name": "send-approval-check",
+          "description": "The gate before an agent sends anything on your behalf: one card showing recipient, sending account, subject, attachments, and the single sentence that commits you to something, so approving the wording is never mistaken for approving the send.",
+          "duet_ready": "designed-for-duet"
+        },
+        {
+          "name": "shared-agent-charter",
+          "description": "Write the charter for an AI agent a whole team shares (an OpenAI Dot in Slack or Teams, a shared Claude agent, a channel bot): who may give it instructions, which channels it works in, what it may say and do there, whose data it may read, who owns its mistakes, and how anyone can pause it.",
+          "duet_ready": "designed-for-duet"
+        },
+        {
+          "name": "signature-pipeline-watch",
+          "description": "Have a proactive agent watch documents waiting for signature in DocuSign, Adobe Sign or PandaDoc: which are stuck, for how long, with whom, which have expiry dates coming, and which signed ones still need countersigning or filing, reported in the brief with drafted reminders a human sends.",
+          "duet_ready": "designed-for-duet"
+        },
+        {
+          "name": "standing-orders",
+          "description": "Write the operating manual a proactive agent follows between your messages: who is a VIP, what it may always do, what it must never do, the tone it writes in, and when it must stop and ask.",
+          "duet_ready": "designed-for-duet"
+        },
+        {
+          "name": "store-watch",
+          "description": "Have a proactive agent watch an online shop (Shopify, WooCommerce, Etsy) for what needs the owner: best-sellers about to run out, a spike in refunds or returns on one product, bad reviews, failed orders and checkout problems, with interrupts only for what cannot wait and drafted replies for reviews.",
+          "duet_ready": "designed-for-duet"
+        },
+        {
+          "name": "weekly-rollup",
+          "description": "Roll a week of daily reports and agent activity into one honest weekly summary: trajectory against goals, what shipped with proof, the recurring blocker, and what to change next week.",
+          "duet_ready": "designed-for-duet"
+        }
+      ]
+    },
+    {
       "bundle": "pm-ecommerce",
       "description": "E-commerce & retail skills that sell: Product Description, Marketplace Listing Optimizer, Return & Refund Policy, Promotion Plan, Review Response, and Category Page Brief. Listings that rank and convert, promos with the margin math, and reviews handled well.",
       "category": "productivity",
@@ -3168,7 +3274,8 @@
         },
         {
           "name": "stakeholder-update",
-          "description": "Create concise executive stakeholder updates using the BLUF (Bottom Line Up Front) framework."
+          "description": "Create concise executive stakeholder updates using the BLUF (Bottom Line Up Front) framework.",
+          "duet_ready": "designed-for-duet"
         },
         {
           "name": "style-fingerprint",
@@ -3615,7 +3722,8 @@
         },
         {
           "name": "late-invoice-chaser",
-          "description": "Chase an overdue invoice and actually get paid — a firm-but-friendly escalation ladder that protects the client relationship until it's clear the relationship is the problem."
+          "description": "Chase an overdue invoice and actually get paid — a firm-but-friendly escalation ladder that protects the client relationship until it's clear the relationship is the problem.",
+          "duet_ready": "designed-for-duet"
         },
         {
           "name": "late-invoice-escalation",
@@ -6077,7 +6185,8 @@
         },
         {
           "name": "competitive-intelligence-monitor",
-          "description": "Monitor competitor signals and surface strategic implications for your roadmap."
+          "description": "Monitor competitor signals and surface strategic implications for your roadmap.",
+          "duet_ready": "designed-for-duet"
         },
         {
           "name": "competitor-signal-tracker",

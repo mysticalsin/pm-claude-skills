@@ -16,7 +16,7 @@ y un informe para dirección que pueda enviar hoy mismo.
 
 Tu asistente carga [user-interview-synthesis](skills/user-interview-synthesis/SKILL.md), [prd-template](skills/prd-template/SKILL.md) y [stakeholder-update](skills/stakeholder-update/SKILL.md) y devuelve los tres documentos, no consejos sobre cómo escribirlos.
 
-PM Skills es una biblioteca open source de 1295 Agent Skills: archivos Markdown (SKILL.md) que enseñan a un asistente de IA a hacer una tarea profesional al nivel de alguien senior, desde escribir un PRD hasta descifrar un contrato de alquiler. Cada skill incluye el marco de trabajo, una plantilla de salida, controles de calidad y antipatrones. Licencia MIT; funciona con Claude, ChatGPT, Gemini, Cursor y Codex. (PM significa Professional, no solo product manager.)
+PM Skills es una biblioteca open source de 1314 Agent Skills: archivos Markdown (SKILL.md) que enseñan a un asistente de IA a hacer una tarea profesional al nivel de alguien senior, desde escribir un PRD hasta descifrar un contrato de alquiler. Cada skill incluye el marco de trabajo, una plantilla de salida, controles de calidad y antipatrones. Licencia MIT; funciona con Claude, ChatGPT, Gemini, Cursor y Codex. (PM significa Professional, no solo product manager.)
 
 ## ⚡ Instalación en 30 segundos
 
@@ -27,6 +27,20 @@ npx pm-claude-skills setup        # guiado: detecta tus agentes, muestra el plan
 ```
 
 Una skill es solo un archivo Markdown que tu IA lee: instalar copia archivos de texto y desinstalar los borra; nada puede romper tu entorno. Instrucciones por herramienta: [docs/installation.md](docs/installation.md)
+
+## 🔄 Mantenlo actualizado
+
+Las skills mejoran cada semana. Da igual cómo lo instalaste: actualizar es un solo paso.
+
+| Instalaste con | Actualiza con |
+|---|---|
+| `npx pm-claude-skills add` (cualquier herramienta) | Ejecuta el mismo comando otra vez. `npx pm-claude-skills doctor` muestra qué está instalado y qué está desactualizado. |
+| El marketplace de Claude Code | Abre `/plugin`, elige el marketplace pm-claude-skills y pulsa Update. |
+| El paquete de Python | `pip install -U pm-skills` |
+| El servidor MCP | Usa `npx -y -p pm-claude-skills@latest pm-claude-skills-mcp` en tu configuración MCP y cada arranque será la última versión. |
+| Un fork de este repositorio | El workflow `sync-fork.yml` incluido adelanta tu `main` al upstream cada semana. Ver [docs/fork-sync.md](docs/fork-sync.md). |
+
+¿Dudas? Las **[preguntas frecuentes en español](docs/faq/es.md)** responden las más comunes.
 
 ## 🗺 Qué puedes hacer
 
@@ -41,12 +55,12 @@ Una skill es solo un archivo Markdown que tu IA lee: instalar copia archivos de 
 | Leer antes de firmar | [pm-decoders](plugins/pm-decoders/) | Alquileres, facturas y contratos descifrados, con las cuentas | El documento en sí |
 | Conseguir el próximo empleo | [pm-jobsearch](plugins/pm-jobsearch/) | Descifrar la oferta, outreach, preparación de entrevistas | La oferta y tu CV |
 
-Los 152 bundles con sus comandos de instalación: [docs/catalogue.md](docs/catalogue.md) · todas las skills: [SKILLS.md](SKILLS.md)
+Los 153 bundles con sus comandos de instalación: [docs/catalogue.md](docs/catalogue.md) · todas las skills: [SKILLS.md](SKILLS.md)
 
 ## ✅ Confianza y calidad
 
-- Cada cambio pasa por CI: estructura (SkillCheck L3, las 1295 skills), auditoría de seguridad, detección de duplicados, paridad de traducciones y una batería de inyección de prompts.
-- 389 de las 1295 skills tienen casos de evaluación; 28 tienen puntuaciones a ciegas publicadas. Lo no medido se declara no medido.
+- Cada cambio pasa por CI: estructura (SkillCheck L3, las 1314 skills), auditoría de seguridad, detección de duplicados, paridad de traducciones y una batería de inyección de prompts.
+- 389 de las 1314 skills tienen casos de evaluación; 28 tienen puntuaciones a ciegas publicadas. Lo no medido se declara no medido.
 - Las skills legales, fiscales y laborales terminan con un descargo claro e indican a qué profesional acudir; no sustituyen a uno.
 - Privacidad: todo corre en local. Las skills, la CLI y los exports no envían nada. Detalles: [docs/TELEMETRY.md](docs/TELEMETRY.md) · [SECURITY.md](SECURITY.md) · licencia: [MIT](LICENSE)
 
